@@ -1,0 +1,81 @@
+#contact{
+    background: url('../Files/bg2.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 7px;
+    height: 34rem;
+}
+
+#contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    background-color: #1c1c1cc9;
+}
+
+#contact form input, #contact form textarea{
+    font-size: 1.2rem;
+    font-family: 'Itim', cursive;
+    width: 70%;
+    border: none;
+    outline: none;
+    margin: 7px;
+    padding: 5px;
+    border-radius: 3px;
+    background: none;
+    color: var(--white);
+    border-bottom: 1px solid var(--pink);
+    transition: all 0.2s linear;
+}
+
+#contact form input:focus, #contact form textarea:focus{
+    border-bottom-color: #ca0075;
+}
+
+#contact form input::placeholder, #contact form textarea::placeholder{
+    color: var(--white);
+}
+
+.BTN{
+    margin-top: 21px;
+    padding: 3px 7px;
+    font-size: 1.3rem;
+    font-family: 'Courgette', cursive;
+    border-radius: 3px;
+    width: 50%;
+    transition: all 0.2s linear;
+}
+
+.BTN:hover{
+    background-color: #ca0075;
+}
+
+@media screen and (max-width: 864px) {
+    #contact form input, #contact form textarea{
+        margin: 5px;
+        font-size: 0.9rem;
+    }
+    .BTN{
+        font-size: 1rem;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    #contact{
+        height: 21rem;
+    }
+    #contact form input, #contact form textarea{
+        font-size: 0.7rem;
+    }
+    .BTN{
+        margin-top: 11px;
+        font-size: 0.75rem;
+        width: 30%;
+    }
+}

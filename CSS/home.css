@@ -1,0 +1,103 @@
+/* Templates */
+.templatepad {
+    padding: 11px;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 3px;
+}
+
+/* Text Opposite to Show More */
+.detail h3 {
+    color: var(--grey);
+    font-family: 'itim', cursive;
+}
+
+/* Show More Button */
+.detail button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: var(--pink);
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-family: 'itim', cursive;
+}
+
+.detail button span {
+    transition: all 0.2s linear;
+    position: relative;
+    left: 0px;
+}
+
+.detail button:hover span {
+    left: 3px;
+}
+
+#soon{
+    display: none;
+}
+
+/* Content inside Templates Section */
+.showcase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Three Containers inside Show Case */
+.containers {
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.1s linear;
+    border-radius: 11px;
+    margin: 5px;
+    overflow: hidden;
+    padding-bottom: 7px;
+    box-shadow: 0px 0px 5px black;
+    max-width: 19%;
+    text-decoration: none;
+    color: var(--grey);
+}
+
+.containers:hover{
+    box-shadow: 0px 0px 5px 0.5px black;
+}
+
+.containers img {
+    width: 100%;
+    box-shadow: 0px 0px 7px black;
+}
+
+/* Template Name and Price + Buttons */
+.temdetail {
+    display: flex;
+    flex-direction: column;
+    padding: 7px 11px;
+}
+
+.temdetail h3 {
+    font-family: 'Sofia Sans', sans-serif;
+    margin-bottom: 7px;
+}
+
+.temdetail s{
+    font-size: 0.9rem;
+}
+
+.temdetail h4 {
+    font-size: 1.05rem;
+    font-weight: 300;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.gallery .containers{
+    display: none;
+}
