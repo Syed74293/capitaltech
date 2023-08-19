@@ -1,0 +1,76 @@
+.navbar-logo{
+    width: 13% !important;
+}
+
+.navbar-items a{
+    font-size: 0.67rem !important;
+}
+
+.navbar-hoverable-menu{
+    max-width: 22% !important;
+}
+
+.header marquee{
+    padding: 5px 0px !important;
+}
+
+.header marquee h2{
+    font-size: 1.7rem !important;
+}
+
+.text-sec{
+    padding: 12px 24px !important;
+}
+
+.text-sec h2:nth-child(4){
+    font-size: 5.25rem !important;
+}
+
+.text-sec h2:nth-child(6){
+    width: 95vw !important;
+}
+
+.text-sec h2:nth-child(7){
+    width: 80vw !important;
+}
+
+.text-sec-top{
+    font-size: 1.8rem !important;
+}
+
+.mianG img{
+    width: 47% !important;
+}
+
+.baehtemaam{
+    font-size: 2rem !important;
+}
+
+.adil-sb{
+    max-width: 53% !important;
+}
+
+.adil-sb h2:nth-child(8){
+    font-size: 1.55rem !important;    
+}
+
+.adil-sb h2:nth-child(9){
+    font-size: 2.1rem !important;    
+    margin: 21px 0px 9px 0px !important;
+}
+
+.adil-sb h2:nth-child(10){
+    font-size: 1.1rem !important;
+}
+
+img[alt= "Adil Sabri Sb"]{
+    width: 30% !important;
+}
+
+.btnsec-btn{
+    font-size: 0.85rem;
+}
+
+.copyerror{
+    font-size: 0.6rem;
+}

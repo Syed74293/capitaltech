@@ -1,0 +1,96 @@
+.navbar{
+    padding: 0px 11px;
+}
+
+.navbar-logo{
+    width: 4.2rem !important;
+    margin: 5px 0px;
+}
+
+.menubtn{
+    padding: 4px;
+}
+
+.menubtn img{
+    width: 1.3em !important;
+}
+
+.navbar-items a {
+    padding: 9px 15px !important;
+}
+
+.header marquee{
+    padding: 3px 0px !important;
+    transition: all 1.3s ease-in-out 0s !important;
+}
+
+.header marquee h2 {
+    font-size: 1.2rem !important;
+}
+
+.text-sec-top {
+    font-size: 1.05rem !important;
+}
+
+.text-sec h2:nth-child(4) {
+    font-size: 1.8rem !important;
+}
+
+.text-sec h2:nth-child(6) {
+    font-size: 0.75rem !important;
+    margin-top: 8.5rem;
+}
+
+.text-sec h2:nth-child(7) {
+    font-size: 0.95rem !important;
+}
+
+.text-sec h2:nth-child(8) {
+    font-size: 0.65rem !important;
+    margin-top: 3px !important;
+}
+
+.mianG img{
+    width: 80% !important;
+}
+
+.baehtemaam{
+    font-size: 1.67rem !important;
+}
+
+.adil-sb {
+    padding: 24px 5px 11px 5px !important;
+}
+
+.adil-sb h2:nth-child(8) {
+    font-size: 1rem !important;
+    margin-top: 9px;
+}
+
+.adil-sb h2:nth-child(9) {
+    font-size: 1.25rem !important;
+    margin: 5px 0px !important;
+}
+
+.adil-sb h2:nth-child(10) {
+    font-size: 0.67rem !important;
+}
+
+img[alt="Adil Sabri Sb"] {
+    width: 60% !important;
+    margin-bottom: 9px !important;
+}
+
+.btnsec-btn{
+    font-size: 0.57rem !important;
+    padding: 10px 12px !important;
+}
+
+.footer{
+    font-size: 0.44rem !important;
+    padding: 16px 11px !important;
+}
+
+.footer div{
+    padding: 0px 3px !important;
+}

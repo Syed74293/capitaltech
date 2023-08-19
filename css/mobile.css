@@ -1,0 +1,67 @@
+.menubtn img{
+    width: 1.45em !important;
+}
+
+.navbar-items a {
+    font-size: 0.6rem !important;
+}
+
+.header marquee h2 {
+    font-size: 1.45rem !important;
+}
+
+.text-sec-top {
+    font-size: 1.21rem !important;
+}
+
+.text-sec h2:nth-child(4) {
+    font-size: 2.45rem !important;
+}
+
+.text-sec h2:nth-child(6) {
+    font-size: 1rem !important;
+}
+
+.text-sec h2:nth-child(7) {
+    font-size: 1.25rem !important;
+}
+
+.text-sec h2:nth-child(8) {
+    font-size: 0.75rem !important;
+    line-height: 1.4;
+}
+
+.adilsb-img-outer-container {
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.adil-sb {
+    padding: 21px 0px 11px 0px !important;
+    max-width: 100% !important;
+}
+
+img[alt="Adil Sabri Sb"] {
+    width: 50% !important;
+    margin-top: 0 !important;
+    margin-bottom: 11px !important;
+}
+
+.btnsec-btn{
+    font-size: 0.67rem;
+    padding: 11px 21px;
+}
+
+.footer{
+    font-size: 0.5rem;
+    padding: 21px;
+}
+
+.copyerror div{
+    font-size: 0.55rem;
+}
+
+.copyerror div img{
+    margin-right: 6px;
+    width: 0.75rem;
+}

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darbar e Sabria</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script defer src="./js/script.js"></script>
+    <link rel="stylesheet" media="screen and (min-width: 1600px)" href="./css/4k.css">
+    <link rel="stylesheet" media="screen and (max-width: 927px)" href="./css/laptop.css">
+    <link rel="stylesheet" media="screen and (max-width: 820px)" href="./css/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 599px)" href="./css/mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 599px)" href="./css/mobile-s.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="navbar">
+            <!-- logo -->
+            <img onclick="window.location='/'" src="./images/darbar e sabria.jpg" alt="Darbar e Sabria"
+                class="navbar-logo">
+
+            <button onclick="show_collapsable()" class="menubtn"><img src="./images/menu.png" alt="Menu"></button>
+
+            <!-- list -->
+            <ul class="navbar-ul" id="navbar" style="flex: 0 0 auto;">
+
+                <!-- list-items -->
+                <li class="navbar-items"><a href="/">HOME</a></li>
+
+                <li class="navbar-items navbar-hoverable-item">
+                    <a>BRIEF INTRODUCTION <img class="navbar-arrow" src="./images/arrow.png" alt=""></a>
+
+                    <!-- hoverable-menu -->
+                    <ul class="navbar-hoverable-menu">
+
+                        <!-- hoverbale-menu items -->
+                        <li class="navbar-hoverable-menu-items"><a href="">BRIEF INTRODUCTION MIAN G SARKAR- ENGLISH</a>
+                        </li>
+                        <li class="navbar-hoverable-menu-items"><a href="">BRIEF INTRODUCTION MIAN G SARKAR- (اردو)</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="navbar-items navbar-hoverable-item">
+                    <a>SABRI WAZAIF <img class="navbar-arrow" src="./images/arrow.png" alt=""></a>
+
+                    <!-- hoverable-menu -->
+                    <ul class="navbar-hoverable-menu">
+
+                        <!-- hoverbale-menu items -->
+                        <li class="navbar-hoverable-menu-items"><a href="">TASBIHAT E SILSILA E AALIA SABRIA
+                                (تسبیحات)</a>
+                        </li>
+                        <li class="navbar-hoverable-menu-items"><a href="">SHAJRAH SHAREEF (شجرہ شریف)</a></li>
+                        <li class="navbar-hoverable-menu-items"><a href="">AADAB E MUREED (آداب مرید)</a></li>
+                        <li class="navbar-hoverable-menu-items"><a href="">QASIDA E GHOUSIA (قصیدہ غوثیہ)</a></li>
+                        <li class="navbar-hoverable-menu-items"><a href="">DUA E HIZBUL BAHR (دعاءحزب البحر)</a></li>
+                        <li class="navbar-hoverable-menu-items"><a href="">DALAILUL KHAIRAT COMPLETE (دلائل الخیرات
+                                مکمل)</a></li>
+                    </ul>
+                </li>
+
+                <li class="navbar-items"><a href="">PICTURES</a></li>
+
+                <li class="navbar-items navbar-hoverable-item">
+                    <a>VIDEOS <img class="navbar-arrow" src="./images/arrow.png" alt=""></a>
+
+                    <!-- hoverable-menu -->
+                    <ul class="navbar-hoverable-menu">
+
+                        <!-- hoverbale-menu items -->
+                        <li class="navbar-hoverable-menu-items"><a href="">Urs Shareef</a>
+                        </li>
+                        <li class="navbar-hoverable-menu-items"><a href="">Sunday Hazri</a></li>
+                    </ul>
+                </li>
+
+                <li class="navbar-items"><a href="">ANOUNCEMENTS</a></li>
+
+                <li class="navbar-items"><a href="">CONTACT US</a></li>
+
+            </ul>
+
+        </div>
+        <!-- list -->
+        <ul class="navbar-ul collapsable-navbar" id="collapsable-navbar" style="max-height: 0px;">
+
+            <!-- list-items -->
+            <li class="navbar-items"><a href="/">HOME</a></li>
+
+            <li class="navbar-items collapsable-navbar-hoverable" onclick="show_collapsable_menu(0)">
+                <a>BRIEF INTRODUCTION <img style="width: 0.45rem; transition: transform 0.1s linear"
+                        src="./images/arrow.png" alt=""></a>
+
+                <!-- hoverable-menu -->
+                <ul class="collapsable-navbar-hoverable-menu" style="max-height: 0px;">
+
+                    <!-- hoverbale-menu items -->
+                    <li class="navbar-hoverable-menu-items"><a href=""><img
+                                style="width: 0.45rem; transform: rotate(270deg); margin-right: 5px;"
+                                src="./images/arrow.png" alt=""> BRIEF INTRODUCTION MIAN G SARKAR- ENGLISH</a>
+                    </li>
+                    <li class="navbar-hoverable-menu-items"><a href=""><img
+                                style="width: 0.45rem; transform: rotate(270deg); margin-right: 5px;"
+                                src="./images/arrow.png" alt=""> BRIEF INTRODUCTION MIAN G SARKAR- (اردو)</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="navbar-items collapsable-navbar-hoverable" onclick="show_collapsable_menu(1)">
+                <a>SABRI WAZAIF <img style="width: 0.45rem; transition: transform 0.1s linear" src="./images/arrow.png"
+                        alt=""></a>
+
+                <!-- hoverable-menu -->
+                <ul class="collapsable-navbar-hoverable-menu" style="max-height: 0px;">
+
+                    <!-- hoverbale-menu items -->
+                    <li class="navbar-hoverable-menu-items"><a href=""><img
+                                style="width: 0.45rem; transform: rotate(270deg); margin-right: 5px;"
+                                src="./images/arrow.png" alt=""> TASBIHAT E SILSILA E AALIA SABRIA
+                            (تسبیحات)</a>
+                    </li>
+                    <li class="navbar-hoverable-menu-items"><a href=""><img
+                                style="width: 0.45rem; transform: rotate(270deg); margin-right: 5px;"
+                                src="./images/arrow.png" alt=""> SHAJRAH SHAREEF (شجرہ شریف)</a></li>
+                    <li class="navbar-hoverable-menu-items"><a href=""><img
+                                style="width: 0.45rem; transform: rotate(270deg); margin-right: 5px;"
+                                src="./images/arrow.png" alt=""> AADAB E MUREED (آداب مرید)</a></li>
+                    <li class="navbar-hoverable-menu-items"><a href=""><img
+                                style="width: 0.45rem; transform: rotate(270deg); margin-right: 5px;"
+                                src="./images/arrow.png" alt=""> QASIDA E GHOUSIA (قصیدہ غوثیہ)</a></li>
+                    <li class="navbar-hoverable-menu-items"><a href=""><img
+                                style="width: 0.45rem; transform: rotate(270deg); margin-right: 5px;"
+                                src="./images/arrow.png" alt=""> DUA E HIZBUL BAHR (دعاءحزب البحر)</a></li>
+                    <li class="navbar-hoverable-menu-items"><a href=""><img
+                                style="width: 0.45rem; transform: rotate(270deg); margin-right: 5px;"
+                                src="./images/arrow.png" alt=""> DALAILUL KHAIRAT COMPLETE (دلائل الخیرات
+                            مکمل)</a></li>
+                </ul>
+            </li>
+
+            <li class="navbar-items"><a href="">PICTURES</a></li>
+
+            <li class="navbar-items collapsable-navbar-hoverable" onclick="show_collapsable_menu(2)">
+                <a>VIDEOS <img style="width: 0.45rem; transition: transform 0.1s linear" src="./images/arrow.png"
+                        alt=""></a>
+
+                <!-- hoverable-menu -->
+                <ul class="collapsable-navbar-hoverable-menu" style="max-height: 0px;">
+
+                    <!-- hoverbale-menu items -->
+                    <li class="navbar-hoverable-menu-items"><a href=""><img
+                                style="width: 0.45rem; transform: rotate(270deg); margin-right: 5px;"
+                                src="./images/arrow.png" alt=""> Urs Shareef</a>
+                    </li>
+                    <li class="navbar-hoverable-menu-items"><a href=""><img
+                                style="width: 0.45rem; transform: rotate(270deg); margin-right: 5px;"
+                                src="./images/arrow.png" alt=""> Sunday Hazri</a></li>
+                </ul>
+            </li>
+
+            <li class="navbar-items"><a href="">ANOUNCEMENTS</a></li>
+
+            <li class="navbar-items"><a href="">CONTACT US</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- header -->
+    <header class="header">
+        <!-- marquee -->
+        <marquee behavior="scroll" direction="right" scrollamount="8"
+            style="background-color: #FFA500; transition: all 1.7s ease-in-out; width: 0; padding: 9px 0px;">
+            <!-- marquee h2 -->
+            <h2 style="color: #ffffff; font-size: 2.25rem; font-family: 'Abril Fatface'; font-weight: 400;">
+
+                وظائف چشتیہ صابریہ:♥♥♥ کلمہ طیّبہ: لَآ اِلٰهَ اِلَّا اللّٰهُ مُحَمَّدٌ رَّسُوْلُ اللّٰهِ ♥♥♥
+                استغفار:اَسْتَغْفِرُ اللّٰهَ رَبِّىْ مِنْ كُلِّ ذَنْۢبٍ وَّاَتُوْبُ اِلَيْهِ ♥♥♥ درودجمالی:اَللّٰهُمَّ
+                صَلِّ وَ سَلِّمْ وَ بَارِكْ عَلٰي سَيِّدِنَا وَ مَوْلَانَا مُحَمَّدٍ وَّ اٰلِهٖ وَ اَصْحَابِهٖ بِعَدَدِ
+                قَدْرِحُسْنِهٖ وَ جَمَالِهٖ ♥♥♥ درود تنجينا:اَللّٰهُمَّ صَلِّ وَ سَلِّمْ وَ بَارِكْ عَلیٰ سَيِّدِنَا وَ
+                مَوْلَانَا مُحَمَّدٍ صَلوٰةً تُنْجِيْنَا بِهَا مِنْ جَمِيْعِ الْاَھْوَالِ وَالْاٰفَاتِ وَتَقْضِىْ لَنَا
+                بِهَا جَمِيْعَ الْحَاجَاتِ وَتُطَهِّرُنَا بِهَا مِنْ جَمِيْعِ السَّيِّاٰتِ وَتَرْفَعُنَابِهَآاَعْلَى
+                الدَّرَجَاتِ وَتُبَلِّغُنَابِهَآ اَقْصَىْ الْغَايَاتِ مِنْ جَمِيْعِ الْخَيْرَاتِ فِى الْحَيَاةِ وَبَعْدَ
+                المَماتِ ♥♥♥
+
+            </h2>
+        </marquee>
+        <!-- image after marquee -->
+        <img src="./images/Mazar-Sharif.jpg" alt="Mazar-Sharif">
+    </header>
+
+    <!-- text after mazar shareef img -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri&family=Harmattan&family=IBM+Plex+Sans+Arabic&family=Jomhuria&family=Lateef&family=Noto+Naskh+Arabic&display=swap"
+        rel="stylesheet">
+    <section class="text-sec">
+        <h2 class="text-sec-top">_____ بفیضانِ نظر _____</h2>
+        <h2 class="text-sec-top">سیّدُ السَّادات ، قُطبُ الاَقطاب، شیخ المشائخ، پیر ِطریقت ، رہبر ِشریعت</h2>
+        <h2 class="text-sec-top">صوفیٔ باصفا،آفتابِ چشتیت، ماہتابِ صابریت</h2>
+        <h2 style="text-align: center; color: #ed7600; font-family: Jameel, Sans-serif; font-size:
+            6.25rem; line-height: 2em;"> (امروہوی) ؒ فقیر سیدمحمد عبداللہ
+            شاہ</h2>
+        <h2 class="text-sec-top" style="font-family: Jameel, sans-serif;">قادری، چشتی ، صابری، نظامی، نقشبندی، سہروردی
+        </h2>
+        <h2
+            style=" text-align: center; color: #23a455; font-family: Georgia, Sans-serif; font-size: 1.75rem; line-height: 1.4em; text-transform: uppercase; width: 80vw; margin-top: 20px;">
+            Syed Us Sa’dat, Qutub ul Alqab,
+            Shaikhul Mashaikh , Peer e Tariqat, Rahbar a Shari’at, Sufi e Basafa, Aftab e Chistiat, Mahtab e
+            Sabriat,</h2>
+        <h2
+            style="text-align: center; color: #ed7600; font-family: Georgia, Sans-serif; font-size: 2.4375rem;line-height: 1.4em; text-transform: uppercase; width: 75vw;">
+            FAQEER SYED MUHAMMAD ABDULLAH SHAH (Amrohi) (Rhmat ullah alaeh)
+        </h2>
+        <h2
+            style="text-align: center; color: #4054B2; font-family: Georgia, Sans-serif; font-size: 1.3rem;
+        font-weight: 900; text-shadow: 0px 0px 10px rgba(64,84,178,0.3); text-transform: uppercase; letter-spacing: 1px; margin-top: 11px;">
+            Qadri, Chishti, Sabri, Nizami, Naqshbandi, Suharwardi
+        </h2>
+    </section>
+
+    <!-- img-frame -->
+    <section class="imgframe">
+        <!-- svg top design -->
+        <svg class="imgframe-1-topsvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"
+            preserveAspectRatio="none"
+            style="transform: translateX(-50%) rotateY(180deg); width: calc(147% + 1.3px); height: 117px; position: absolute; left: 50%; top: 0px; z-index: 3;">
+            <path style="fill: #ffbf0f;" opacity="0.33"
+                d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
+            </path>
+            <path style="fill: #ffbf0f;" opacity="0.66"
+                d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z">
+            </path>
+            <path style="fill: #ffbf0f;"
+                d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z">
+            </path>
+        </svg>
+        <!-- background-gradient -->
+        <div
+            style="background-image: linear-gradient(80deg, #06184f 0%, #ffffff 100%); position: absolute; top: 0px; height: 100%; width: 100%; opacity: 0.76;">
+        </div>
+        <!-- MianG-Sarkaar -->
+        <div class="mianG">
+            <img style="width: 42%; border: 3px solid #f2f2f2;position: relative; margin: 60px 0px 27px 0px; box-shadow: -22px 0px 72px 32px rgba(233,239,50,0.5);"
+                src="./images/Mian-G-Sarkar.jpg" alt="Mian-G-Sarkar">
+        </div>
+        <!-- svg bottom design -->
+        <svg style="display: block; position: absolute; bottom: 0px; left: 50%; width: calc(300% + 1.3px); height: 82px; transform: translateX(-50%) rotateY(0deg) rotateX(180deg);"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+            <path style="fill: #ffbf0f;" opacity="0.33"
+                d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
+            </path>
+            <path style="fill: #ffbf0f;" opacity="0.66"
+                d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z">
+            </path>
+            <path style="fill: #ffbf0f;"
+                d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z">
+            </path>
+        </svg>
+
+    </section>
+
+    <section class="imgframe">
+        <svg class="imgframe-2-topsvg"
+            style="width: calc(193% + 1.3px); height: 66px; transform: translateX(-50%) rotateY(180deg); display: block; position: absolute; top: -1px; left: 50%; z-index: 1"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+            <path style="fill: #bfbfbf;" opacity="0.33"
+                d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
+            </path>
+            <path style="fill: #bfbfbf;" opacity="0.66"
+                d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z">
+            </path>
+            <path style="fill: #bfbfbf;"
+                d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z">
+            </path>
+        </svg>
+        <!-- background-gradient -->
+        <div
+            style="background-image: linear-gradient(190deg, #06184f 0%, #ffffff 100%); position: absolute; top: 0px; height: 100%; width: 100%; opacity: 0.76;">
+        </div>
+        <div class="adilsb-img-outer-container"
+            style="display: flex; justify-content: space-around; width: 100%; align-items: flex-start;">
+            <div class="adil-sb" style="position: relative; max-width: 47%; padding: 10px 0px 21px 0px;">
+                <h2 class="baehtemaam" style="margin-bottom: 5px;">—با اہتمام—</h2>
+                <h2 class="baehtemaam">،پیر ِطریقت ، رہبر ِشریعت</h2>
+                <h2 class="baehtemaam">سجادہ نشین&nbsp; <br> دربارِ عالیہ صابریہ{کراچی}</h2>
+                <h2 class="baehtemaam">حضرت محمدعادل</h2>
+                <h2 class="baehtemaam">&nbsp;قادری</h2>
+                <h2 class="baehtemaam">&nbsp;،چشتی ، صابری،</h2>
+                <h2 class="baehtemaam">نظامی، نقشبندی، سہروردی</h2>
+                <h2
+                    style="text-align: center; color:#77001f; font-family: 'Georgia', Sans-serif; line-height: 1.3em; font-size: 29px; text-transform: uppercase; margin-top: 11px;">
+                    Peer-e Tareeqat, Rahbar-<br>e-Shariat, Sajjadah <br>Nasheen&nbsp;</h2>
+                <h2
+                    style="color: rgb(29, 29, 35); font-size: 2.5rem; font-weight: 900; text-align: center; font-family: 'Georgia' , sans-serif; text-transform: uppercase; margin: 28px 0px 10px 0px ; ">
+                    Hazrat Muhammad <br>Adil</h2>
+                <h2
+                    style="color: rgb(15, 0, 86); font-family: 'Georgia', sans-serif; text-transform: uppercase; font-size: 1.5rem; text-align: center; line-height: 1.5em ;">
+                    Qadri, Chishti, Sabri, Nizami, Naqshbandi, Suharwadri</h2>
+            </div>
+            <img src="./images/Murshad-Kareem.jpg" alt="Adil Sabri Sb" style="position: relative; width: 24%;
+        border: 3px solid black; box-shadow: 0px 0px 42px 2px rgba(235,242,50,0.5); margin-top: 3rem;">
+        </div>
+    </section>
+
+    <section class="btnsec">
+        <hr style="width: 80%; margin: auto; border-color: #ffbf0f;">
+        <button class="btnsec-btn btn-4k" style="margin: 20px 0px;">QUICK LINKS</button>
+        <button class="btnsec-btn">LOCATION DARBARE AALIA SABRIA</button>
+    </section>
+
+    <section class="copyerror">
+        <div>
+            <img src="./images/warning.png" alt="Warning">
+            ALERT: SORRY! COPY NOT ALLOWED
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div>
+            Copyright © 2023 darbaresabria.org | <span style="color: #db9423; cursor: pointer;">Credits</span>
+        </div>
+        <div>
+            Powered by <span style="color: #db9423; cursor: pointer;">darbaresabria.org</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

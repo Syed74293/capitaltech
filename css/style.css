@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    background-color: white;
+    width: 8px;
+    box-shadow: inset 0px 0px 5px black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #db9423;
+    border-radius: 30px;
+}
+
+@font-face {
+    font-family: 'Jameel';
+    src: url('../Fonts/Jameel-Noori-Nastaleeq.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jameel Noori';
+    src: url('../Fonts/Jameel\ Noori\ Nastaleeq\ Kasheeda.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* nav tag */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 21px;
+}
+
+/* logo */
+.navbar-logo {
+    width: 12rem;
+    /* width: 202px; */
+    margin: 12px 5px;
+    cursor: pointer;
+}
+
+/* list */
+.navbar-ul {
+    display: flex;
+    list-style: none;
+}
+
+/* list items */
+.navbar-items a {
+    display: flex;
+    align-items: baseline;
+    text-decoration: none;
+    padding: 12px 7px;
+    font-size: 0.79rem;
+    /* font-size: 12px; */
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(29, 29, 35);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* a direct child of .navbar-items */
+.navbar-items:hover>a {
+    color: #db9423;
+}
+
+/* for current active page */
+.navbar-ul a.active {
+    color: #db9423;
+}
+
+/* hoverable menu's arrow */
+.navbar-arrow {
+    width: 0.4rem;
+    margin-left: 5px;
+}
+
+/* menu on hover */
+.navbar-hoverable-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    list-style: none;
+    border: 1px solid #db9423;
+    background-color: #ffffff;
+    max-width: 16%;
+    min-width: 11%;
+    visibility: hidden;
+    z-index: 3;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-hoverable-menu-items a {
+    border-bottom: 1px solid #eaeaea;
+    line-height: 1.5;
+}
+
+.navbar-hoverable-menu-items a:hover {
+    color: #db9423;
+}
+
+/* to display menu on hover */
+.navbar-hoverable-item:hover .navbar-hoverable-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menubtn {
+    outline: none;
+    border: none;
+    background-color: #1d1d23;
+    display: none;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.menubtn img {
+    width: 1.7em;
+    filter: invert(1);
+}
+
+@keyframes rotateForward {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes rotateReverse {
+    from {
+        transform: rotate(180deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.collapsable-navbar {
+    flex-direction: column;
+    border-top: 0px solid #eaeaea;
+    background-color: #f9f9f9;
+    overflow-y: hidden;
+}
+
+.collapsable-navbar li a {
+    align-items: center;
+    padding: 12px 21px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.collapsable-navbar-hoverable>a {
+    justify-content: space-between;
+}
+
+.collapsable-navbar-hoverable-menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: inherit;
+    overflow-y: hidden;
+}
+
+.collapsable-navbar-hoverable-menu li a {
+    padding: 12px 25px;
+}
+
+/* header to align marquee and img */
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+/* text section after mazar shareef img */
+.text-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 50px;
+}
+
+/* text of text section */
+.text-sec-top {
+    font-size: 2.3rem;
+    font-family: "Jameel Noori", Sans-serif;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.8em;
+    text-shadow: 0px 0px 5px #ed7600;
+    text-align: center;
+}
+
+.imgframe {
+    position: relative;
+    overflow-x: hidden;
+    background: url('../images/bg.jpg') no-repeat center center/cover fixed;
+}
+
+.mianG {
+    display: flex;
+    justify-content: center;
+}
+
+/* .copyerror {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    left: 50;
+    color: #555;
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 0.76rem;
+    font-weight: bold;
+    width: 14%;
+    border: 1px solid #f5aca6;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 34px 2px rgba(242, 191, 191, 1);
+    -moz-box-shadow: 0px 0px 34px 2px rgba(242, 191, 191, 1);
+    box-shadow: 0px 0px 34px 2px rgba(242, 191, 191, 1);
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.copyerror img{
+    width: 11%;
+} */
+
+.copyerror {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    background-color: transparent;
+    pointer-events: none;
+    /* Make it non-interactive */
+}
+
+.copyerror div {
+    background-color: #fff;
+    font-weight: bold;
+    font-family: Tahoma;
+    font-size: 0.7rem;
+    text-align: center;
+    color: #555;
+    border: 1px solid #f5aca6;
+    -webkit-box-shadow: 0px 0px 34px 2px rgba(242, 191, 191, 1);
+    -moz-box-shadow: 0px 0px 34px 2px rgba(242, 191, 191, 1);
+    box-shadow: 0px 0px 34px 2px rgba(242, 191, 191, 1);
+    padding: 21px 11px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyerror div img {
+    margin-right: 7px;
+}
+
+/* text stylining where adil sbs image is displayed */
+
+.baehtemaam {
+    color: #EBEBEB;
+    font-family: "jameel", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 130%;
+}
+
+.btnsec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.btnsec-btn {
+    border: none;
+    outline: none;
+    background-color: #d9534f;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 32px -3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: opacity 1.5s linear;
+    opacity: 0;
+}
+
+.btnsec-btn:hover {
+    animation: breathing 1s 0s infinite both linear;
+}
+
+@keyframes breathing {
+    25% {
+        transform: scale(1.1);
+    }
+
+    75% {
+        transform: scale(0.9)
+    }
+}
+
+.footer {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 25px 30px 25px;
+    font-size: 0.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+/* ****************Contact**************** */
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maptxt::before {
+    content: "";
+    background: url('../images/bg2.png') no-repeat bottom center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: 0.17;
+}
+
+.maptxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 11px;
+}
+
+.maptxt h2 {
+    font-size: 3.6rem;
+    font-family: 'jameel', sans-serif;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    word-spacing: 0.1em;
+    color: #1d1d23;
+}
+
+.map iframe {
+    border: none;
+    width: 72%;
+    height: 500px;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 11px;
+    margin-top: 27px;
+    transition: all 1s ease-in;
+    transform: translateY('1');
+    animation: fadeDown 1.2s alternate 0s 1 forwards ease;
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-70%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
