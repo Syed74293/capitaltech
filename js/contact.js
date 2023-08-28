@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let listItems = document.querySelectorAll('.navbar-ul a');
 
+    checkViewport();
+
     listItems.forEach(function (item) {
         if (item.getAttribute('href') === window.location.pathname) {
             item.classList.add('active');
@@ -64,10 +66,59 @@ function isElementInViewport(element) {
     );
 }
 
-window.addEventListener('scroll', () => {
-    if (isElementInViewport(document.getElementsByClassName('map')[0].getElementsByTagName('iframe')[0])) {
+function isElementInViewportWithBottomEdited(element) {
+    const rect = element.getBoundingClientRect();
+    const viewportHeight = (window.innerHeight || document.documentElement.clientHeight);
+    return (
+        rect.top >= 70 &&
+        rect.bottom - 70 <= viewportHeight
+    );
+}
+
+function checkViewport() {
+    if (isElementInViewport(document.getElementsByClassName('map')[0].getElementsByTagName('iframe')[0]) || isElementInViewport(document.getElementsByClassName('maptxt')[0])) {
+        document.getElementsByClassName('map')[0].getElementsByTagName('iframe')[0].style.animation = 'fadeDown 1.2s alternate 0s 1 forwards ease'
     }
-});
+    if (isElementInViewport(document.getElementsByClassName('map')[1].getElementsByTagName('iframe')[0]) || isElementInViewport(document.getElementsByClassName('maptxt')[1])) {
+        document.getElementsByClassName('map')[1].getElementsByTagName('iframe')[0].style.animation = 'fadeDown 1.2s alternate 0s 1 forwards ease'
+    }
+    if (isElementInViewport(document.getElementsByClassName('map')[1].getElementsByTagName('iframe')[0]) || isElementInViewport(document.getElementsByClassName('formsec')[0]) || isElementInViewport(document.getElementById('check'))) {
+        document.querySelector('.formsec').style.animation = 'fadeDown 1.2s alternate 0s 1 forwards ease'
+    }
+    if (isElementInViewport(document.querySelector('.info-right')) || isElementInViewport(document.querySelector('.info-right').getElementsByTagName('h2')[0])) {
+        for (let i = 0; i < document.querySelector('.info-right').getElementsByTagName('h2').length; i++)
+            document.querySelector('.info-right').getElementsByTagName('h2')[i].style.animation = `fadeRight 1.2s alternate 0.${i}s 1 forwards ease`;
+    }
+    if (isElementInViewport(document.querySelector('.info-left')) || isElementInViewport(document.querySelector('.info-left').getElementsByTagName('h2')[0])) {
+        for (let i = 0; i < document.querySelector('.info-left').getElementsByTagName('h2').length; i++)
+            document.querySelector('.info-left').getElementsByTagName('h2')[i].style.animation = `fadeLeft 1.2s alternate 0.${i}s 1 forwards ease`;
+    }
+    for (let i = 0; i < document.getElementsByClassName('location-flex-container').length; i++) {
+        if (isElementInViewport(document.getElementsByClassName('location-flex-container')[i].getElementsByTagName('img')[0])) {
+            document.getElementsByClassName('location-flex-container')[i].getElementsByTagName('img')[0].style.animation = `fadeIn 1.2s alternate 0s 1 forwards ease`;
+        }
+    }
+    for (let i = 0; i < document.getElementsByClassName('location-flex-container').length; i++) {
+        if (isElementInViewport(document.getElementsByClassName('location-flex-container')[i].getElementsByClassName('location-container-heading')[0])) {
+            if (i == 0)
+                document.getElementsByClassName('location-flex-container')[i].getElementsByClassName('location-container-heading')[0].style.animation = `fadeLeft 1.2s alternate 0s 1 forwards ease`;
+            else
+                document.getElementsByClassName('location-flex-container')[i].getElementsByClassName('location-container-heading')[0].style.animation = `fadeDown 1.2s alternate 0s 1 forwards ease`;
+        }
+    }
+    for (let i = 0; i < document.getElementsByClassName('location-flex-container').length; i++) {
+        for (let k = 0; k < document.getElementsByClassName('location-flex-container')[i].getElementsByClassName('location-container-content').length; k++) {
+            if (isElementInViewport(document.getElementsByClassName('location-flex-container')[i].getElementsByClassName('location-container-content')[k])) {
+                if (i == 0)
+                    document.getElementsByClassName('location-flex-container')[i].getElementsByClassName('location-container-content')[k].style.animation = `fadeLeft 1.2s alternate 0.${k}s 1 forwards ease`;
+                else
+                    document.getElementsByClassName('location-flex-container')[i].getElementsByClassName('location-container-content')[k].style.animation = `fadeRight 1.2s alternate 0.${k}s 1 forwards ease`;
+            }
+        }
+    }
+}
+
+window.addEventListener('scroll', checkViewport);
 
 // set heights for collapsable menus
 let collapsableMenuHeights = [];
@@ -114,3 +165,57 @@ function show_collapsable_menu(n) {
         collapsableNavbar.style.maxHeight = collapsableHeight;
     }
 }
+
+document.querySelector('.formsec>form>button').addEventListener('click', (e) => {
+    e.preventDefault();
+    for (let i = 0; i < document.querySelector('.formsec>form').getElementsByTagName('input').length; i++) {
+        for (let i = 0; i < document.querySelector('.formsec>form').getElementsByTagName('textarea').length; i++) {
+            if (document.querySelector('.formsec>form').getElementsByTagName('textarea')[i].value == '') {
+                document.querySelector('.formsec>form').getElementsByTagName('textarea')[i].style.outline = '1px solid #990000';
+                document.querySelector('.formsec>form').getElementsByTagName('label')[4].style.opacity = 1;
+            }
+            setTimeout(() => {
+                document.querySelector('.formsec>form').getElementsByTagName('textarea')[i].style.outline = 'none';
+                document.querySelector('.formsec>form').getElementsByTagName('label')[4].style.opacity = 0;
+                for (let i = 0; i < document.querySelector('.formsec>form').getElementsByTagName('input').length; i++) {
+                    document.querySelector('.formsec>form').getElementsByTagName('input')[i].style.outline = 'none';
+                    document.querySelector('.formsec>form').getElementsByTagName('label')[i].style.opacity = 0;
+                }
+            }, 5000);
+        }
+        if (document.querySelector('.formsec>form').getElementsByTagName('input')[i].value == '') {
+            document.querySelector('.formsec>form').getElementsByTagName('input')[i].style.outline = '1px solid #990000';
+            document.querySelector('.formsec>form').getElementsByTagName('label')[i].style.opacity = 1;
+        }
+    }
+    // if (document.querySelector('').value != ('') || (null) || (undefined)) {
+
+    //     document.getElementById('submit-email').disabled = true;
+
+    //     // Get the email value
+    //     const email = document.querySelector('.add-email').value;
+
+    //     // Send the email value using the Fetch API
+    //     fetch('/subscribed', {
+    //         method: 'POST',
+    //         headers: {
+    //             'Content-Type': 'application/json'
+    //         },
+    //         body: JSON.stringify({ email: email })
+    //     })
+    //         .then(response => {
+    //             if (!response.ok) {
+    //                 throw new Error('Network response was not ok');
+    //             }
+    //             return response.json();
+    //         })
+    //         .then(data => {
+    //             // Handle the response data (if needed)
+    //             console.log('Email sent successfully:', data);
+    //             document.querySelector('.subscription').classList.add('done');
+    //         })
+    //         .catch(error => {
+    //             console.error('Error sending email:', error);
+    //         });
+    // }
+});

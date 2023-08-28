@@ -1,76 +1,102 @@
-.navbar-logo{
+.navbar-logo {
     width: 13% !important;
 }
 
-.navbar-items a{
+.navbar-items a {
     font-size: 0.67rem !important;
 }
 
-.navbar-hoverable-menu{
+.navbar-hoverable-menu {
     max-width: 22% !important;
 }
 
-.header marquee{
+.header marquee {
     padding: 5px 0px !important;
 }
 
-.header marquee h2{
+.header marquee h2 {
     font-size: 1.7rem !important;
 }
 
-.text-sec{
+.text-sec {
     padding: 12px 24px !important;
 }
 
-.text-sec h2:nth-child(4){
+.text-sec h2:nth-child(4) {
     font-size: 5.25rem !important;
 }
 
-.text-sec h2:nth-child(6){
+.text-sec h2:nth-child(6) {
     width: 95vw !important;
 }
 
-.text-sec h2:nth-child(7){
+.text-sec h2:nth-child(7) {
     width: 80vw !important;
 }
 
-.text-sec-top{
+.text-sec-top {
     font-size: 1.8rem !important;
 }
 
-.mianG img{
+.mianG img {
     width: 47% !important;
 }
 
-.baehtemaam{
+.baehtemaam {
     font-size: 2rem !important;
 }
 
-.adil-sb{
+.adil-sb {
     max-width: 53% !important;
 }
 
-.adil-sb h2:nth-child(8){
-    font-size: 1.55rem !important;    
+.adil-sb h2:nth-child(8) {
+    font-size: 1.55rem !important;
 }
 
-.adil-sb h2:nth-child(9){
-    font-size: 2.1rem !important;    
+.adil-sb h2:nth-child(9) {
+    font-size: 2.1rem !important;
     margin: 21px 0px 9px 0px !important;
 }
 
-.adil-sb h2:nth-child(10){
+.adil-sb h2:nth-child(10) {
     font-size: 1.1rem !important;
 }
 
-img[alt= "Adil Sabri Sb"]{
+img[alt="Adil Sabri Sb"] {
     width: 30% !important;
 }
 
-.btnsec-btn{
+.btnsec-btn {
     font-size: 0.85rem;
 }
 
-.copyerror{
+.copyerror {
     font-size: 0.6rem;
+}
+
+/* ****************Contact**************** */
+.maptxt h2 {
+    font-size: 2.7rem !important;
+}
+
+.map iframe {
+    height: 700px !important;
+}
+
+.info-left h2,
+.info-right h2 {
+    font-size: 2.2rem !important;
+}
+
+.location-flex-container img {
+    width: 14.5rem !important;
+}
+
+.location-container-heading {
+    font-size: 2.75rem !important;
+}
+
+.location-container-content {
+    font-size: 1.65rem !important;
 }

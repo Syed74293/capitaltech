@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Harmattan&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -20,14 +24,14 @@ body {
 
 @font-face {
     font-family: 'Jameel';
-    src: url('../Fonts/Jameel-Noori-Nastaleeq.ttf') format('truetype');
+    src: url('../Fonts/Jameel-Noori-Nastaleeq_1.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Jameel Noori';
-    src: url('../Fonts/Jameel\ Noori\ Nastaleeq\ Kasheeda.ttf') format('truetype');
+    src: url('../Fonts/Jameel-Noori-Nastaleeq-Kasheeda_1.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -195,14 +199,17 @@ body {
     padding: 12px 50px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Harmattan&display=swap');
+
 /* text of text section */
 .text-sec-top {
     font-size: 2.3rem;
-    font-family: "Jameel Noori", Sans-serif;
+    font-family: 'Jameel Noori', sans-serif;
+    /* font-family: 'Harmattan', sans-serif; */
     font-weight: 400;
     color: #000000;
     line-height: 1.8em;
-    text-shadow: 0px 0px 5px #ed7600;
+    text-shadow: 0px 0px 3px #ed7600;
     text-align: center;
 }
 
@@ -255,8 +262,8 @@ body {
     transition: opacity 0.5s ease;
     opacity: 0;
     background-color: transparent;
+    z-index: 1;
     pointer-events: none;
-    /* Make it non-interactive */
 }
 
 .copyerror div {
@@ -346,8 +353,7 @@ body {
     align-items: center;
 }
 
-.maptxt::before {
-    content: "";
+.maptxt>div {
     background: url('../images/bg2.png') no-repeat bottom center/cover;
     height: 100%;
     width: 100%;
@@ -366,23 +372,23 @@ body {
 }
 
 .maptxt h2 {
-    font-size: 3.6rem;
-    font-family: 'jameel', sans-serif;
+    font-size: 3.4rem;
+    font-family: 'Jameel', sans-serif;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     word-spacing: 0.1em;
     color: #1d1d23;
+    text-align: center;
 }
 
 .map iframe {
     border: none;
-    width: 72%;
-    height: 500px;
+    width: 84%;
+    height: 600px;
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.5);
-    border-radius: 11px;
+    border-radius: 3px;
     margin-top: 27px;
     transition: all 1s ease-in;
-    transform: translateY('1');
-    animation: fadeDown 1.2s alternate 0s 1 forwards ease;
+    opacity: 0;
 }
 
 @keyframes fadeDown {
@@ -395,4 +401,230 @@ body {
         opacity: 1;
         transform: none;
     }
+}
+
+.formsec {
+    display: flex;
+    justify-content: center;
+    padding: 70px 9px 21px 9px;
+    opacity: 0;
+    transition: all 1s ease-in;
+}
+
+.formsec form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 76%;
+    background-color: #fff;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+    padding: 27px;
+    margin: 11px;
+    border-radius: 3px;
+    transition: all 1s ease-in;
+}
+
+.formsec form input,
+.formsec form textarea {
+    background-color: #fafafa;
+    border: 1px solid #eaeaea;
+    padding: 11px 7px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 3px;
+    margin: 3px 0px;
+    transition: all 0.1s linear;
+}
+
+.formsec form input::placeholder,
+.formsec form textarea::placeholder {
+    color: #666;
+    font-weight: bold;
+}
+
+.formsec form input:focus,
+.formsec form textarea:focus {
+    outline: none;
+    border: 1px solid #db9423;
+}
+
+.formsec form label {
+    align-self: self-start;
+    margin-bottom: 11px;
+    font-size: 0.7rem;
+    color: #990000;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.formsec form button {
+    align-self: self-start;
+    outline: none;
+    border: none;
+    background-color: #db9423;
+    color: #fff;
+    padding: 11px 21px;
+    margin-left: -7px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.formsec form button:hover {
+    background-color: #1d1d23;
+}
+
+.info {
+    overflow-x: hidden;
+    background: linear-gradient(180deg, rgba(35, 164, 85, 0.38) 0%, #ffffff 100%);
+    position: relative;
+    padding: 27px 11px;
+}
+
+.info h2 {
+    z-index: 1;
+    position: relative;
+}
+
+.info-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-center h2 {
+    margin-bottom: 21px;
+}
+
+.info-heading {
+    font-family: "Jameel", Sans-serif;
+    font-size: 3.7rem;
+    text-shadow: 2px 0px 2px #ffdc2d;
+    color: #1d1d23;
+    font-weight: 400;
+}
+
+.info-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 6%;
+    margin-top: 11px;
+}
+
+.info-right h2 {
+    font-size: 2.5rem;
+    font-family: 'Jameel', sans-serif;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes fadeRight {
+    0% {
+        opacity: 0;
+        transform: translateX(70%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.info-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 6%;
+    margin-top: 27px;
+}
+
+.info-left h2 {
+    font-size: 2.5rem;
+    font-family: 'Jameel', sans-serif;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes fadeLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-70%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.location {
+    overflow-x: hidden;
+    background-color: #1d1d23;
+    /* padding-bottom: 40px; */
+}
+
+.location-flex {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 11px;
+}
+
+.location-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-flex-container img {
+    width: 18rem;
+    opacity: 0;
+}
+
+.location-container-heading {
+    font-size: 3.2rem;
+    font-family: 'Jameel', sans-serif;
+    font-weight: 400;
+    text-shadow: 3px 0px 8px #efdf00;
+    color: #ffffff;
+    margin-bottom: 11px;
+    opacity: 0;
+}
+
+.location-container-content {
+    font-size: 1.9rem;
+    font-family: 'Jameel', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1.25;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ****************PDF**************** */
+.intro-container{
+    display: flex;
+    justify-content: center;
+    padding: 27px 11px;
+}
+
+.intro-container iframe{
+    border: none;
+    width: 80%;
+    height: 1020px;
 }

@@ -1,18 +1,18 @@
-.navbar-logo{
+.navbar-logo {
     width: 14rem !important;
 }
 
-.navbar-items a{
+.navbar-items a {
     font-size: 1.15rem;
     padding: 12px 9px;
 }
 
-.navbar-hoverable-menu{
+.navbar-hoverable-menu {
     max-width: 16%;
     min-width: 9%;
 }
 
-.header marquee{
+.header marquee {
     padding: 11px 0px !important;
 }
 
@@ -40,11 +40,11 @@
     font-size: 2rem !important;
 }
 
-.mianG img{
+.mianG img {
     width: 42% !important;
 }
 
-.baehtemaam{
+.baehtemaam {
     font-size: 3.5rem !important;
 }
 
@@ -64,28 +64,94 @@ img[alt="Adil Sabri Sb"] {
     margin-bottom: 70px !important;
 }
 
-.btnsec{
+.btnsec {
     padding: 40px 0px !important;
 }
 
-.btnsec-btn{
+.btnsec-btn {
     font-size: 1.5rem !important;
     padding: 21px 27px !important;
 }
 
-.btn-4k{
+.btn-4k {
     margin: 32px 0px !important;
 }
 
-.footer{
+.footer {
     font-size: 1rem !important;
 }
 
-.copyerror div{
+.copyerror div {
     font-size: 1rem;
 }
 
-.copyerror div img{
+.copyerror div img {
     margin-right: 9px;
     width: 1.1rem;
+}
+
+/* ****************Contact**************** */
+.maptxt h2 {
+    font-size: 4.4rem;
+}
+
+.map iframe {
+    width: 94%;
+    height: 1000px;
+}
+
+.formsec form {
+    width: 87%;
+    padding: 40px;
+}
+
+.formsec form input,
+.formsec form textarea {
+    padding: 16px 11px;
+    font-size: 1.2rem;
+}
+
+.formsec form input:focus,
+.formsec form textarea:focus {
+    border: 2px solid #db9423;
+}
+
+.formsec form label {
+    margin-bottom: 14px;
+    font-size: 0.85rem;
+}
+
+.formsec form button {
+    padding: 14px 24px;
+    font-size: 1.15rem;
+}
+
+.info-center h2:first-child {
+    font-size: 3.7rem;
+}
+
+.info-heading {
+    font-size: 4rem;
+}
+
+.info-right h2,
+.info-left h2 {
+    font-size: 3.15rem;
+}
+
+.location svg{
+    height: 54px;
+}
+
+.location-flex-container img {
+    width: 27rem;
+}
+
+.location-container-heading {
+    font-size: 4.2rem;
+}
+
+.location-container-content {
+    font-size: 2.9rem;
+    line-height: 1.45;
 }

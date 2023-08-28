@@ -1,4 +1,4 @@
-.menubtn img{
+.menubtn img {
     width: 1.45em !important;
 }
 
@@ -47,21 +47,77 @@ img[alt="Adil Sabri Sb"] {
     margin-bottom: 11px !important;
 }
 
-.btnsec-btn{
+.btnsec-btn {
     font-size: 0.67rem;
     padding: 11px 21px;
 }
 
-.footer{
+.footer {
     font-size: 0.5rem;
     padding: 21px;
 }
 
-.copyerror div{
+.copyerror div {
     font-size: 0.55rem;
 }
 
-.copyerror div img{
+.copyerror div img {
     margin-right: 6px;
     width: 0.75rem;
+}
+
+/* ****************Contact**************** */
+.maptxt h2 {
+    font-size: 1.76rem !important;
+}
+
+.map iframe {
+    width: 97.5% !important;
+    margin-top: 14px !important;
+}
+
+.formsec form {
+    padding: 24px;
+}
+
+.formsec form {
+    width: 100% !important;
+}
+
+.formsec form input,
+.formsec form textarea {
+    font-size: 0.8rem !important;
+    margin: 1px 0px !important;
+}
+
+.formsec form label {
+    margin-bottom: 4px !important;
+}
+
+.formsec form button {
+    padding: 9px 11px !important;
+    font-size: 0.7rem !important;
+}
+
+.info-center h2:first-child {
+    font-size: 1.75rem !important;
+}
+
+.info-heading {
+    font-size: 2rem !important;
+    line-height: 1.3;
+}
+
+hr {
+    width: 97% !important;
+}
+
+.info-left,
+.info-right {
+    padding: 0px;
+}
+
+.info-left h2,
+.info-right h2 {
+    font-size: 1.5rem !important;
 }

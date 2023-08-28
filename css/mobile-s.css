@@ -1,17 +1,17 @@
-.navbar{
+.navbar {
     padding: 0px 11px;
 }
 
-.navbar-logo{
+.navbar-logo {
     width: 4.2rem !important;
     margin: 5px 0px;
 }
 
-.menubtn{
+.menubtn {
     padding: 4px;
 }
 
-.menubtn img{
+.menubtn img {
     width: 1.3em !important;
 }
 
@@ -19,7 +19,7 @@
     padding: 9px 15px !important;
 }
 
-.header marquee{
+.header marquee {
     padding: 3px 0px !important;
     transition: all 1.3s ease-in-out 0s !important;
 }
@@ -50,11 +50,11 @@
     margin-top: 3px !important;
 }
 
-.mianG img{
+.mianG img {
     width: 80% !important;
 }
 
-.baehtemaam{
+.baehtemaam {
     font-size: 1.67rem !important;
 }
 
@@ -81,16 +81,83 @@ img[alt="Adil Sabri Sb"] {
     margin-bottom: 9px !important;
 }
 
-.btnsec-btn{
+.btnsec-btn {
     font-size: 0.57rem !important;
     padding: 10px 12px !important;
 }
 
-.footer{
+.footer {
     font-size: 0.44rem !important;
     padding: 16px 11px !important;
 }
 
-.footer div{
+.footer div {
     padding: 0px 3px !important;
+}
+
+/* ****************Contact**************** */
+.maptxt {
+    padding: 3px;
+}
+
+.maptxt h2 {
+    font-size: 1.17rem !important;
+}
+
+section.map[style="margin-top: 27px;"] {
+    margin-top: 14px !important;
+}
+
+.map iframe {
+    width: 100% !important;
+    margin-top: 9px !important;
+    border-radius: 0px !important;
+}
+
+.formsec form {
+    padding: 14px !important;
+    margin: 0px !important;
+    border-radius: 0px !important;
+}
+
+.formsec form input,
+.formsec form textarea {
+    font-size: 0.7rem !important;
+    padding: 9px 5px !important;
+}
+
+.formsec form label {
+    margin-bottom: 3px !important;
+}
+
+.formsec form button {
+    padding: 8.5px 9px !important;
+    font-size: 0.65rem !important;
+}
+
+.info-center h2:first-child {
+    font-size: 1.157rem !important;
+    margin-bottom: 16px !important;
+}
+
+.info-heading {
+    font-size: 1.5rem !important;
+}
+
+.info-left h2,
+.info-right h2 {
+    font-size: 1.25rem !important;
+}
+
+.location-flex-container img {
+    width: 12rem !important;
+}
+
+.location-container-heading{
+    font-size: 1.7rem !important;
+}
+
+.location-container-content {
+    font-size: 1.15rem !important;
+    line-height: 1.4 !important;
 }
