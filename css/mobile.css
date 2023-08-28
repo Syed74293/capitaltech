@@ -121,3 +121,8 @@ hr {
 .info-right h2 {
     font-size: 1.5rem !important;
 }
+
+/* ****************PDF**************** */
+.intro-container iframe{
+    width: 100%;
+}

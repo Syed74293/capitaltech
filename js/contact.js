@@ -1,16 +1,27 @@
 // current page
 document.addEventListener("DOMContentLoaded", function () {
-
-    let listItems = document.querySelectorAll('.navbar-ul a');
+    let listItems = document.querySelectorAll('.navbar-items a');
 
     checkViewport();
 
-    listItems.forEach(function (item) {
-        if (item.getAttribute('href') === window.location.pathname) {
-            item.classList.add('active');
+    listItems.forEach(element => {
+        let href = element.getAttribute('href'); // Get the href attribute
+
+        // Check if the href matches the window's pathname
+        if (href === window.location.pathname) {
+            element.classList.add('active');
         }
     });
 
+    listItems = document.querySelectorAll('.navbar-hoverable-menu-items a');
+
+    listItems.forEach(element => {
+        let href = element.getAttribute('href'); // Get the href attribute
+        // Check if the href matches the window's pathname
+        if (href === window.location.pathname) {
+            element.classList.add('active');
+        }
+    });
 });
 
 // copyerror
@@ -23,6 +34,11 @@ document.oncontextmenu = function (event) {
 
 // control left double click
 document.ondblclick = function (event) {
+    copyerror(event);
+};
+
+// control left double click
+document.ondragstart = function (event) {
     copyerror(event);
 };
 

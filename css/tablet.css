@@ -138,3 +138,8 @@ hr {
 .location-container-content {
     line-height: 1.6 !important;
 }
+
+/* ****************PDF**************** */
+.intro-container iframe{
+    width: 90%;
+}
