@@ -705,6 +705,7 @@ body {
     max-height: 95vh;
     border-radius: 3px;
     display: none;
+    pointer-events: none;
     /* box-shadow: 0px 0px 1vw #db9423; */
 }
 
