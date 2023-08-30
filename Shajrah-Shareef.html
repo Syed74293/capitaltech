@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shajrah Shareef | Darbar e Sabria</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script defer src="./js/intro.js"></script>
+    <link rel="stylesheet" media="screen and (min-width: 1600px)" href="./css/4k.css">
+    <link rel="stylesheet" media="screen and (max-width: 927px)" href="./css/laptop.css">
+    <link rel="stylesheet" media="screen and (max-width: 820px)" href="./css/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 599px)" href="./css/mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 485px)" href="./css/mobile-s.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="navbar">
+            <!-- logo -->
+            <img onclick="window.location='/'" src="./images/darbar e sabria.jpg" alt="Darbar e Sabria"
+                class="navbar-logo">
+
+            <button onclick="show_collapsable()" class="menubtn"><img src="./images/menu.png" alt="Menu"></button>
+
+            <!-- list -->
+            <ul class="navbar-ul" id="navbar" style="flex: 0 0 auto;">
+
+                <!-- list-items -->
+                <li class="navbar-items"><a href="/">HOME</a></li>
+
+                <li class="navbar-items navbar-hoverable-item">
+                    <a>BRIEF INTRODUCTION <img class="navbar-arrow" src="./images/arrow.png" alt=""></a>
+
+                    <!-- hoverable-menu -->
+                    <ul class="navbar-hoverable-menu">
+
+                        <!-- hoverbale-menu items -->
+                        <li class="navbar-hoverable-menu-items"><a href="/Brief-Introduction-Mian-G-Sarkar-English.html">BRIEF INTRODUCTION MIAN G
+                                SARKAR- ENGLISH</a>
+                        </li>
+                        <li class="navbar-hoverable-menu-items"><a href="/Brief-Introduction-Mian-G-Sarkar-Urdu.html">BRIEF INTRODUCTION MIAN G SARKAR- (اردو)</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="navbar-items navbar-hoverable-item">
+                    <a>SABRI WAZAIF <img class="navbar-arrow" src="./images/arrow.png" alt=""></a>
+
+                    <!-- hoverable-menu -->
+                    <ul class="navbar-hoverable-menu">
+
+                        <!-- hoverbale-menu items -->
+                        <li class="navbar-hoverable-menu-items"><a href="/Tasbihat-e-Silsial-e-Aalia-Sabria.html">TASBIHAT E SILSILA E AALIA SABRIA
+                                (تسبیحات)</a>
+                        </li>
+                        <li class="navbar-hoverable-menu-items"><a href="/Shajrah-Shareef.html">SHAJRAH SHAREEF (شجرہ شریف)</a></li>
+                        <li class="navbar-hoverable-menu-items"><a href="/Aadab-e-Mureed.html">AADAB E MUREED (آداب مرید)</a></li>
+                        <li class="navbar-hoverable-menu-items"><a href="/Qasida-e-Ghousia.html">QASIDA E GHOUSIA (قصیدہ غوثیہ)</a></li>
+                        <li class="navbar-hoverable-menu-items"><a href="/Dua-e-Hizbul-Bahr.html">DUA E HIZBUL BAHR (دعاءحزب البحر)</a></li>
+                        <li class="navbar-hoverable-menu-items"><a href="/Dalailul-Khairaat-Complete.html">DALAILUL KHAIRAT COMPLETE (دلائل الخیرات
+                                مکمل)</a></li>
+                    </ul>
+                </li>
+
+                <li class="navbar-items"><a href="/pictures.html">PICTURES</a></li>
+
+                <li class="navbar-items navbar-hoverable-item">
+                    <a>VIDEOS <img class="navbar-arrow" src="./images/arrow.png" alt=""></a>
+
+                    <!-- hoverable-menu -->
+                    <ul class="navbar-hoverable-menu">
+
+                        <!-- hoverbale-menu items -->
+                        <li class="navbar-hoverable-menu-items"><a href="/Urs-Shareef.html">Urs Shareef</a>
+                        </li>
+                        <li class="navbar-hoverable-menu-items"><a href="/Sunday-Hazri.html">Sunday Hazri</a></li>
+                    </ul>
+                </li>
+
+                <li class="navbar-items"><a href="/anouncements.html">ANOUNCEMENTS</a></li>
+
+                <li class="navbar-items"><a href="/contact.html">CONTACT US</a></li>
+
+            </ul>
+
+        </div>
+        <!-- list -->
+        <ul class="navbar-ul collapsable-navbar" id="collapsable-navbar" style="max-height: 0px;">
+
+            <!-- list-items -->
+            <li class="navbar-items"><a href="/">HOME</a></li>
+
+            <li class="navbar-items collapsable-navbar-hoverable" onclick="show_collapsable_menu(0)">
+                <a>BRIEF INTRODUCTION <img style="width: 0.45rem; transition: transform 0.1s linear"
+                        src="./images/arrow.png" alt=""></a>
+
+                <!-- hoverable-menu -->
+                <ul class="collapsable-navbar-hoverable-menu" style="max-height: 0px;">
+
+                    <!-- hoverbale-menu items -->
+                    <li class="navbar-hoverable-menu-items"><a href="/briefIntroEng.html"><img
+                                style="width: 0.45rem; transform: rotate(270deg); margin-right: 5px;"
+                                src="./images/arrow.png" alt=""> BRIEF INTRODUCTION MIAN G SARKAR- ENGLISH</a>
+                    </li>
+                    <li class="navbar-hoverable-menu-items"><a href="/Brief-Introduction-Mian-G-Sarkar-Urdu.html"><img
+                                style="width: 0.45rem; transform: rotate(270deg); margin-right: 5px;"
+                                src="./images/arrow.png" alt=""> BRIEF INTRODUCTION MIAN G SARKAR- (اردو)</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="navbar-items collapsable-navbar-hoverable" onclick="show_collapsable_menu(1)">
+                <a>SABRI WAZAIF <img style="width: 0.45rem; transition: transform 0.1s linear" src="./images/arrow.png"
+                        alt=""></a>
+
+                <!-- hoverable-menu -->
+                <ul class="collapsable-navbar-hoverable-menu" style="max-height: 0px;">
+
+                    <!-- hoverbale-menu items -->
+                    <li class="navbar-hoverable-menu-items"><a href="/Tasbihat-e-Silsial-e-Aalia-Sabria.html"><img
+                                style="width: 0.45rem; transform: rotate(270deg); margin-right: 5px;"
+                                src="./images/arrow.png" alt=""> TASBIHAT E SILSILA E AALIA SABRIA
+                            (تسبیحات)</a>
+                    </li>
+                    <li class="navbar-hoverable-menu-items"><a href="/Shajrah-Shareef.html"><img
+                                style="width: 0.45rem; transform: rotate(270deg); margin-right: 5px;"
+                                src="./images/arrow.png" alt=""> SHAJRAH SHAREEF (شجرہ شریف)</a></li>
+                    <li class="navbar-hoverable-menu-items"><a href="/Aadab-e-Mureed.html"><img
+                                style="width: 0.45rem; transform: rotate(270deg); margin-right: 5px;"
+                                src="./images/arrow.png" alt=""> AADAB E MUREED (آداب مرید)</a></li>
+                    <li class="navbar-hoverable-menu-items"><a href="/Qasida-e-Ghousia.html"><img
+                                style="width: 0.45rem; transform: rotate(270deg); margin-right: 5px;"
+                                src="./images/arrow.png" alt=""> QASIDA E GHOUSIA (قصیدہ غوثیہ)</a></li>
+                    <li class="navbar-hoverable-menu-items"><a href="Dua-e-Hizbul-Bahr.html"><img
+                                style="width: 0.45rem; transform: rotate(270deg); margin-right: 5px;"
+                                src="./images/arrow.png" alt=""> DUA E HIZBUL BAHR (دعاءحزب البحر)</a></li>
+                    <li class="navbar-hoverable-menu-items"><a href="/Dalailul-Khairaat-Complete.html"><img
+                                style="width: 0.45rem; transform: rotate(270deg); margin-right: 5px;"
+                                src="./images/arrow.png" alt=""> DALAILUL KHAIRAT COMPLETE (دلائل الخیرات
+                            مکمل)</a></li>
+                </ul>
+            </li>
+
+            <li class="navbar-items"><a href="pictures.html">PICTURES</a></li>
+
+            <li class="navbar-items collapsable-navbar-hoverable" onclick="show_collapsable_menu(2)">
+                <a>VIDEOS <img style="width: 0.45rem; transition: transform 0.1s linear" src="./images/arrow.png"
+                        alt=""></a>
+
+                <!-- hoverable-menu -->
+                <ul class="collapsable-navbar-hoverable-menu" style="max-height: 0px;">
+
+                    <!-- hoverbale-menu items -->
+                    <li class="navbar-hoverable-menu-items"><a href="Urs-Shareef.html"><img
+                                style="width: 0.45rem; transform: rotate(270deg); margin-right: 5px;"
+                                src="./images/arrow.png" alt=""> Urs Shareef</a>
+                    </li>
+                    <li class="navbar-hoverable-menu-items"><a href="Sunday-Hazri.html"><img
+                                style="width: 0.45rem; transform: rotate(270deg); margin-right: 5px;"
+                                src="./images/arrow.png" alt=""> Sunday Hazri</a></li>
+                </ul>
+            </li>
+
+            <li class="navbar-items"><a href="anouncements.html">ANOUNCEMENTS</a></li>
+
+            <li class="navbar-items"><a href="/contact.html">CONTACT US</a></li>
+
+        </ul>
+    </nav>
+
+    <section class="intro-container">
+        <iframe src="https://drive.google.com/file/d/1_joB83ybS7vnN-faMpvZjOuJNgy21UP9/preview"
+            id="intro-container-iframe"></iframe>
+        <!-- <div id="loader" style="background-color: transparent; color: #db9423; position: absolute; width: 80%; height: 1020px; display: flex; justify-content: center; align-items: center;">Loading...</div> -->
+    </section>
+
+    <section class="copyerror">
+        <div>
+            <img src="./images/warning.png" alt="Warning">
+            ALERT: SORRY! COPY NOT ALLOWED
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div>
+            Copyright © 2023 darbaresabria.org | <span style="color: #db9423; cursor: pointer;">Credits</span>
+        </div>
+        <div>
+            Powered by <span style="color: #db9423; cursor: pointer;">darbaresabria.org</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

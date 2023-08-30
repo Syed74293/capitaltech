@@ -161,3 +161,28 @@ section.map[style="margin-top: 27px;"] {
     font-size: 1.15rem !important;
     line-height: 1.4 !important;
 }
+
+/* ****************Gallery**************** */
+.containers {
+    width: 40%;
+}
+
+.containers>div {
+    max-height: 6.5rem;
+}
+
+.containers h2 {
+    font-size: 0.95rem;
+}
+
+.containers p {
+    font-size: 0.65rem;
+}
+
+.close-btn {
+    padding: 0.7% 0.9%;
+}
+
+.close-btn img {
+    width: 4vw;
+}

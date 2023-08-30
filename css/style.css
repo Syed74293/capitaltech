@@ -617,14 +617,107 @@ body {
 }
 
 /* ****************PDF**************** */
-.intro-container{
+.intro-container {
     display: flex;
     justify-content: center;
     padding: 27px 11px;
 }
 
-.intro-container iframe{
+.intro-container iframe {
     border: none;
     width: 80%;
     height: 1020px;
+}
+
+/* ****************Gallery**************** */
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+    overflow-x: hidden;
+    padding: 11px 5px;
+}
+
+.containers {
+    width: 29%;
+    border: 2px solid #db9423;
+    overflow: hidden;
+    margin: 0.5% 2px;
+    padding: 11px 12px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.containers>div {
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #000000; */
+    padding: 5px;
+}
+
+.containers div img {
+    max-width: 100%;
+    max-height: 100%;
+    /* max-height: 62.5%; */
+    border-radius: 3px;
+    cursor: pointer;
+    border: 2px solid #000;
+    box-shadow: 0px 0px 16px #db9423;
+}
+
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d1d23e5;
+    transition: all 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.close-btn {
+    outline: none;
+    border: none;
+    padding: 0.7%;
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.close-btn img {
+    width: 2.5vw;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.overlay>img {
+    max-width: 95vw;
+    max-height: 95vh;
+    border-radius: 3px;
+    display: none;
+    /* box-shadow: 0px 0px 1vw #db9423; */
+}
+
+
+.containers h2 {
+    padding: 11px 0px 3px 0px;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 1px solid #db9423;
+}
+
+.containers p {
+    padding: 7px 0px 0px 0px;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }

@@ -139,7 +139,7 @@ img[alt="Adil Sabri Sb"] {
     font-size: 3.15rem;
 }
 
-.location svg{
+.location svg {
     height: 54px;
 }
 
@@ -154,4 +154,23 @@ img[alt="Adil Sabri Sb"] {
 .location-container-content {
     font-size: 2.9rem;
     line-height: 1.45;
+}
+
+/* ****************Gallery**************** */
+.containers {
+    width: 31%;
+}
+
+.containers>div {
+    height: 45vh;
+}
+
+.containers h2 {
+    padding: 16px 0px 3px 0px;
+    font-size: 2.4rem;
+}
+
+.containers p {
+    font-size: 1.4rem;
+    font-weight: lighter;
 }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Styles for the container div */
+        #wrapper {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Styles for the row and its children */
+        .w3-row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .w3-third {
+            width: 31.3333%;
+            padding: 5px;
+            float: left;
+        }
+
+        /* Styles for the images within the row */
+        .w3-third img {
+            margin-bottom: 10px;
+        }
+
+        /* Additional styles for images */
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Style for the ID myGrid */
+        #myGrid {
+            margin-bottom: 128px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Photo Grid -->
+    <div class="w3-row" id="myGrid" style="margin-bottom:128px">
+        <div class="w3-third">
+            <img src="./test-images/img-1.jpg" style="width:100%">
+            <img src="./test-images/img-2.jpg" style="width:100%">
+            <img src="./test-images/img-3.jpg" style="width:100%">
+            <img src="./test-images/img-4.jpg" style="width:100%">
+            <img src="./test-images/img-2.jpg" style="width:100%">
+            <img src="./test-images/img-5.jpg" style="width:100%">
+            <img src="./test-images/img-7.jpg" style="width:100%">
+        </div>
+
+        <div class="w3-third">
+            <img src="./test-images/img-6.jpg" style="width:100%">
+            <img src="./test-images/img-5.jpg" style="width:100%">
+            <img src="./test-images/img-2.jpg" style="width:100%">
+            <img src="./test-images/img-3.jpg" style="width:100%">
+            <img src="./test-images/img-4.jpg" style="width:100%">
+            <img src="./test-images/img-3.jpg" style="width:100%">
+            <img src="./test-images/img-7.jpg" style="width:100%">
+        </div>
+
+        <div class="w3-third">
+            <img src="./test-images/img-1.jpg" style="width:100%">
+            <img src="./test-images/img-6.jpg" style="width:100%">
+            <img src="./test-images/img-1.jpg" style="width:100%">
+            <img src="./test-images/img-4.jpg" style="width:100%">
+            <img src="./test-images/img-5.jpg" style="width:100%">
+            <img src="./test-images/img-6.jpg" style="width:100%">
+            <img src="./test-images/img-7.jpg" style="width:100%">
+        </div>
+    </div>
+
+</body>
+
+</html>

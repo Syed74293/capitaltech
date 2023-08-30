@@ -123,6 +123,29 @@ hr {
 }
 
 /* ****************PDF**************** */
-.intro-container iframe{
+.intro-container iframe {
     width: 100%;
+}
+
+/* ****************Gallery**************** */
+.containers {
+    padding: 9px;
+}
+
+.containers>div {
+    height: 7rem;
+}
+
+.containers h2 {
+    padding: 9px 0px 2px 0px;
+    font-size: 1.1rem;
+}
+
+.containers p {
+    padding: 6px 0px 0px 0px;
+    font-size: 0.75rem;
+}
+
+.close-btn img {
+    width: 2.9vw;
 }
