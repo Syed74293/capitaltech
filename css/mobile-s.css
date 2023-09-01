@@ -153,13 +153,18 @@ section.map[style="margin-top: 27px;"] {
     width: 12rem !important;
 }
 
-.location-container-heading{
+.location-container-heading {
     font-size: 1.7rem !important;
 }
 
 .location-container-content {
     font-size: 1.15rem !important;
     line-height: 1.4 !important;
+}
+
+/* ****************PDF**************** */
+.intro-container iframe {
+    height: 600px;
 }
 
 /* ****************Gallery**************** */
@@ -184,5 +189,19 @@ section.map[style="margin-top: 27px;"] {
 }
 
 .close-btn img {
-    width: 4vw;
+    width: 5vw;
+}
+
+/* ****************Anouncement Board**************** */
+.anouncement-board div h2 {
+    font-size: 1.2rem;
+}
+
+.anouncement-board div p {
+    font-size: 0.65rem;
+    margin-top: 6.5px;
+}
+
+.date {
+    font-size: 0.56rem;
 }

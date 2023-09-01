@@ -42,17 +42,17 @@ document.ondragstart = function (event) {
     copyerror(event);
 };
 
-// control keyboard shortcuts
-document.onkeydown = function (event) {
-    // f12 key
-    if (event.keyCode === 123 || event.which === 123) {
-        copyerror(event);
-    }
-    // ctrl u
-    if (event.ctrlKey && event.keyCode === 85) {
-        copyerror(event);
-    }
-};
+// // control keyboard shortcuts
+// document.onkeydown = function (event) {
+//     // f12 key
+//     if (event.keyCode === 123 || event.which === 123) {
+//         copyerror(event);
+//     }
+//     // ctrl u
+//     if (event.ctrlKey && event.keyCode === 85) {
+//         copyerror(event);
+//     }
+// };
 
 function copyerror(event) {
     event.preventDefault();

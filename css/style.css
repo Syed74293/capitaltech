@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Harmattan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Lateef&family=Noto+Nastaliq+Urdu&display=swap');
 
 * {
     margin: 0;
@@ -199,18 +198,26 @@ body {
     padding: 12px 50px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Harmattan&display=swap');
-
 /* text of text section */
 .text-sec-top {
     font-size: 2.3rem;
     font-family: 'Jameel Noori', sans-serif;
-    /* font-family: 'Harmattan', sans-serif; */
     font-weight: 400;
     color: #000000;
     line-height: 1.8em;
     text-shadow: 0px 0px 3px #ed7600;
     text-align: center;
+}
+
+.imgframe::before {
+    content: "";
+    background: linear-gradient(80deg, #06184f 0%, #ffffff 100%) center center/cover fixed;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.76;
 }
 
 .imgframe {
@@ -654,14 +661,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid #000000; */
-    padding: 5px;
+    padding: 3px 0px;
 }
 
 .containers div img {
     max-width: 100%;
     max-height: 100%;
-    /* max-height: 62.5%; */
     border-radius: 3px;
     cursor: pointer;
     border: 2px solid #000;
@@ -706,7 +711,6 @@ body {
     border-radius: 3px;
     display: none;
     pointer-events: none;
-    /* box-shadow: 0px 0px 1vw #db9423; */
 }
 
 
@@ -721,4 +725,61 @@ body {
     padding: 7px 0px 0px 0px;
     font-size: 1rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* ****************Anouncement Board**************** */
+.anouncement-board {
+    margin: 11px 0px;
+}
+
+.anouncement-board div {
+    position: relative;
+    box-shadow: 0px 0px 14px #db9423;
+    width: 97%;
+    margin: 5rem auto;
+    border-radius: 3px;
+    padding: 27px 16px;
+    box-sizing: border-box;
+}
+
+.anouncement-board div h2 {
+    font-size: 2rem;
+    border-bottom: 1px solid #db9423;
+    padding-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.anouncement-board div p {
+    font-size: 1rem;
+    max-width: 90%;
+    margin-top: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.date {
+    font-size: 0.8rem;
+    position: absolute;
+    right: 1.5%;
+    bottom: 1.5%;
+    font-weight: bold;
+    font-family: 'Harmattan', system-ui;
+    color: #666666;
+    opacity: 0.45;
+}
+
+/* ****************Video Gallery**************** */
+.containers div video {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 2px solid #000;
+    box-shadow: 0px 0px 16px #db9423;
+}
+
+.overlay>video {
+    max-width: 95vw;
+    max-height: 95vh;
+    border-radius: 3px;
+    display: none;
 }

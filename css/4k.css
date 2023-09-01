@@ -174,3 +174,21 @@ img[alt="Adil Sabri Sb"] {
     font-size: 1.4rem;
     font-weight: lighter;
 }
+
+/* ****************Anouncement Board**************** */
+.anouncement-board div h2 {
+    font-size: 2.6rem;
+}
+
+.anouncement-board div p {
+    font-size: 1.4rem;
+}
+
+.date {
+    font-size: 1.15rem;
+}
+
+/* ****************Video Gallery**************** */
+.containers div video {
+    border-radius: 5px;
+}
