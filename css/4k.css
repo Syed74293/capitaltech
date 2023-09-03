@@ -3,13 +3,13 @@
 }
 
 .navbar-items a {
-    font-size: 1.15rem;
-    padding: 12px 9px;
+    font-size: 1.45rem !important;
+    padding: 12px 9px !important;
 }
 
 .navbar-hoverable-menu {
-    max-width: 16%;
-    min-width: 9%;
+    max-width: 16% !important;
+    min-width: 9% !important;
 }
 
 .header marquee {
@@ -21,11 +21,11 @@
 }
 
 .text-sec-top {
-    font-size: 3.3rem !important;
+    font-size: 3rem !important;
 }
 
 .text-sec h2:nth-child(4) {
-    font-size: 7.5rem !important;
+    font-size: 7rem !important;
 }
 
 .text-sec h2:nth-child(6) {
@@ -127,7 +127,8 @@ img[alt="Adil Sabri Sb"] {
 }
 
 .info-center h2:first-child {
-    font-size: 3.7rem;
+    font-size: 3.7rem !important;
+    margin-bottom: 21px;
 }
 
 .info-heading {
@@ -153,7 +154,7 @@ img[alt="Adil Sabri Sb"] {
 
 .location-container-content {
     font-size: 2.9rem;
-    line-height: 1.45;
+    line-height: 2.4;
 }
 
 /* ****************Gallery**************** */

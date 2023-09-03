@@ -19,11 +19,11 @@
 }
 
 .text-sec-top {
-    font-size: 1.57rem !important;
+    font-size: 1.3rem !important;
 }
 
 .text-sec h2:nth-child(4) {
-    font-size: 3.7rem !important;
+    font-size: 3rem !important;
 }
 
 .text-sec h2:nth-child(6) {
@@ -54,7 +54,7 @@
 }
 
 .baehtemaam {
-    font-size: 2rem !important;
+    font-size: 1.56rem !important;
 }
 
 .adil-sb h2:nth-child(8) {
@@ -80,7 +80,7 @@ img[alt="Adil Sabri Sb"] {
 
 /* ****************Contact**************** */
 .maptxt h2 {
-    font-size: 2.2rem !important;
+    font-size: 1.65rem !important;
 }
 
 .map iframe {
@@ -110,8 +110,8 @@ img[alt="Adil Sabri Sb"] {
 }
 
 .info-heading {
-    font-size: 2.5rem !important;
-    margin-bottom: 14px !important;
+    font-size: 2.1rem !important;
+    margin-bottom: 11px !important;
 }
 
 hr {
@@ -120,7 +120,7 @@ hr {
 
 .info-left h2,
 .info-right h2 {
-    font-size: 1.57rem !important;
+    font-size: 1.25rem !important;
 }
 
 .location-flex {
@@ -131,12 +131,8 @@ hr {
     margin-bottom: 40px !important;
 }
 
-.location-container-heading {
-    font-size: 2.75rem !important;
-}
-
-.location-container-content {
-    line-height: 1.6 !important;
+.location-flex .location-flex-container:first-child .location-container-content {
+    line-height: 1.85em !important;
 }
 
 /* ****************Gallery**************** */

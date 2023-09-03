@@ -4,10 +4,13 @@
 * {
     margin: 0;
     padding: 0;
+    scrollbar-width: thin;
+    scrollbar-color: #db9423 #e2e2e2;
 }
 
 body {
     user-select: none;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -19,20 +22,6 @@ body {
 ::-webkit-scrollbar-thumb {
     background-color: #db9423;
     border-radius: 30px;
-}
-
-@font-face {
-    font-family: 'Jameel';
-    src: url('../Fonts/Jameel-Noori-Nastaleeq_1.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Jameel Noori';
-    src: url('../Fonts/Jameel-Noori-Nastaleeq-Kasheeda_1.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 }
 
 /* nav tag */
@@ -200,11 +189,12 @@ body {
 
 /* text of text section */
 .text-sec-top {
-    font-size: 2.3rem;
-    font-family: 'Jameel Noori', sans-serif;
+    font-size: 2rem;
+    font-family: 'Noto Nastaliq Urdu', sans-serif;
+    /* font-family: 'Harmattan', sans-serif; */
     font-weight: 400;
     color: #000000;
-    line-height: 1.8em;
+    line-height: 2.4em;
     text-shadow: 0px 0px 3px #ed7600;
     text-align: center;
 }
@@ -299,11 +289,11 @@ body {
 
 .baehtemaam {
     color: #EBEBEB;
-    font-family: "jameel", sans-serif;
-    font-size: 2.4rem;
+    font-family: "Noto Nastaliq Urdu";
+    font-size: 2rem;
     font-weight: 700;
     text-align: center;
-    line-height: 130%;
+    line-height: 197%;
 }
 
 .btnsec {
@@ -375,14 +365,14 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding: 11px;
+    padding: 7px 11px 11px 11px;
 }
 
 .maptxt h2 {
-    font-size: 3.4rem;
-    font-family: 'Jameel', sans-serif;
+    font-size: 2.5rem;
+    font-family: 'Noto Nastaliq Urdu';
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    word-spacing: 0.1em;
+    word-spacing: -4px;
     color: #1d1d23;
     text-align: center;
 }
@@ -503,12 +493,12 @@ body {
 }
 
 .info-center h2 {
-    margin-bottom: 21px;
+    margin-bottom: 11px;
 }
 
 .info-heading {
-    font-family: "Jameel", Sans-serif;
-    font-size: 3.7rem;
+    font-family: "Noto Nastaliq Urdu", Sans-serif;
+    font-size: 2.6rem;
     text-shadow: 2px 0px 2px #ffdc2d;
     color: #1d1d23;
     font-weight: 400;
@@ -519,12 +509,13 @@ body {
     flex-direction: column;
     align-items: flex-end;
     padding-right: 6%;
-    margin-top: 11px;
+    margin-top: 21px;
 }
 
 .info-right h2 {
-    font-size: 2.5rem;
-    font-family: 'Jameel', sans-serif;
+    font-size: 1.9rem;
+    font-family: 'Noto Nastaliq Urdu';
+    line-height: 2.1em;
     opacity: 0;
     position: relative;
     z-index: 1;
@@ -551,8 +542,9 @@ body {
 }
 
 .info-left h2 {
-    font-size: 2.5rem;
-    font-family: 'Jameel', sans-serif;
+    font-size: 1.9rem;
+    font-family: 'Noto Nastaliq Urdu';
+    line-height: 2.1em;
     opacity: 0;
     position: relative;
     z-index: 1;
@@ -594,8 +586,8 @@ body {
 }
 
 .location-container-heading {
-    font-size: 3.2rem;
-    font-family: 'Jameel', sans-serif;
+    font-size: 2.4rem;
+    font-family: 'Noto NAstaliq Urdu';
     font-weight: 400;
     text-shadow: 3px 0px 8px #efdf00;
     color: #ffffff;
@@ -604,12 +596,16 @@ body {
 }
 
 .location-container-content {
-    font-size: 1.9rem;
-    font-family: 'Jameel', sans-serif;
+    font-size: 1.65rem;
+    font-family: 'Noto Nastaliq Urdu';
     font-weight: 400;
     color: #ffffff;
-    line-height: 1.25;
+    word-spacing: -2px;
     opacity: 0;
+}
+
+.location-flex .location-flex-container:first-child .location-container-content {
+    line-height: 1.9em;
 }
 
 @keyframes fadeIn {

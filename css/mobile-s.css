@@ -29,11 +29,16 @@
 }
 
 .text-sec-top {
-    font-size: 1.05rem !important;
+    font-size: 0.75rem !important;
 }
 
 .text-sec h2:nth-child(4) {
-    font-size: 1.8rem !important;
+    font-size: 1.56rem !important;
+    word-spacing: -4px !important;
+
+    @media screen and (max-width: 310px) {
+        font-size: 1.32rem !important;
+    }
 }
 
 .text-sec h2:nth-child(6) {
@@ -55,7 +60,7 @@
 }
 
 .baehtemaam {
-    font-size: 1.67rem !important;
+    font-size: 1.25rem !important;
 }
 
 .adil-sb {
@@ -101,7 +106,11 @@ img[alt="Adil Sabri Sb"] {
 }
 
 .maptxt h2 {
-    font-size: 1.17rem !important;
+    font-size: 0.95rem !important;
+
+    @media screen and (max-width: 317px) {
+        font-size: 0.84rem !important;
+    }
 }
 
 section.map[style="margin-top: 27px;"] {
@@ -112,12 +121,14 @@ section.map[style="margin-top: 27px;"] {
     width: 100% !important;
     margin-top: 9px !important;
     border-radius: 0px !important;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.5);
 }
 
 .formsec form {
     padding: 14px !important;
     margin: 0px !important;
     border-radius: 0px !important;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.5);
 }
 
 .formsec form input,
@@ -137,16 +148,20 @@ section.map[style="margin-top: 27px;"] {
 
 .info-center h2:first-child {
     font-size: 1.157rem !important;
-    margin-bottom: 16px !important;
+    margin-bottom: 14px !important;
 }
 
 .info-heading {
-    font-size: 1.5rem !important;
+    font-size: 1.15rem !important;
+
+    @media screen and (max-width: 314px) {
+        font-size: 1rem !important;
+    }
 }
 
 .info-left h2,
 .info-right h2 {
-    font-size: 1.25rem !important;
+    font-size: 0.9rem !important;
 }
 
 .location-flex-container img {
@@ -154,12 +169,12 @@ section.map[style="margin-top: 27px;"] {
 }
 
 .location-container-heading {
-    font-size: 1.7rem !important;
+    font-size: 1.5rem !important;
+    text-shadow: 2px 0px 5px #efdf00 !important;
 }
 
 .location-container-content {
-    font-size: 1.15rem !important;
-    line-height: 1.4 !important;
+    font-size: 1rem !important;
 }
 
 /* ****************PDF**************** */
