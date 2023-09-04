@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Harmattan&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amiri&family=Lateef&family=Noto+Nastaliq+Urdu&display=swap');
 
+@font-face {
+    font-family: 'Noto Nastaliq';
+    src: url('../Fonts/NotoNastaliqUrdu-Regular.woff') format('woff');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -190,7 +195,8 @@ body {
 /* text of text section */
 .text-sec-top {
     font-size: 2rem;
-    font-family: 'Urdu Typesetting', sans-serif;
+/*     font-family: 'Urdu Typesetting', sans-serif; */
+    font-family: 'Noto Nastaliq', sans-serif;
     /* font-family: 'Harmattan', sans-serif; */
     font-weight: 400;
     color: #000000;
